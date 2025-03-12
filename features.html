@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - ZenChrono</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+    
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4 shadow-lg flex justify-between items-center">
+        <a href="index.html" class="text-blue-400 font-bold">← Back to Home</a>
+        <button id="scrollTopBtn" class="hidden fixed bottom-8 right-8 bg-blue-500 text-white px-4 py-2 rounded-lg shadow-lg hover:bg-blue-400">↑ Top</button>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-center py-20">
+        <h2 class="text-4xl font-bold">ZenChrono Features</h2>
+        <p class="mt-4 text-lg">All the powerful tools you need for deep focus.</p>
+    </header>
+
+    <!-- Features Section -->
+    <section class="py-16 text-center">
+        <div class="flex flex-wrap justify-center gap-8">
+            
+            <div class="w-72 p-6 bg-gray-800 shadow-lg rounded-lg transform hover:scale-105 transition">
+                <h4 class="text-xl font-semibold text-blue-300">📊 AI-Powered Focus Insights</h4>
+                <p class="mt-2 text-gray-400">Track your work patterns and get smart recommendations.</p>
+            </div>
+
+            <div class="w-72 p-6 bg-gray-800 shadow-lg rounded-lg transform hover:scale-105 transition">
+                <h4 class="text-xl font-semibold text-blue-300">⏳ Pomodoro Timer</h4>
+                <p class="mt-2 text-gray-400">Follow structured work-break cycles for max efficiency.</p>
+            </div>
+
+            <div class="w-72 p-6 bg-gray-800 shadow-lg rounded-lg transform hover:scale-105 transition">
+                <h4 class="text-xl font-semibold text-blue-300">🎧 Zen Mode</h4>
+                <p class="mt-2 text-gray-400">Ambient sounds and visuals to enhance deep focus.</p>
+            </div>
+
+            <div class="w-72 p-6 bg-gray-800 shadow-lg rounded-lg transform hover:scale-105 transition">
+                <h4 class="text-xl font-semibold text-blue-300">🚀 Distraction Alerts</h4>
+                <p class="mt-2 text-gray-400">AI detects distractions and alerts you to refocus.</p>
+            </div>
+
+            <div class="w-72 p-6 bg-gray-800 shadow-lg rounded-lg transform hover:scale-105 transition">
+                <h4 class="text-xl font-semibold text-blue-300">📅 Task Scheduler</h4>
+                <p class="mt-2 text-gray-400">Plan your work sessions with seamless integration.</p>
+            </div>
+
+            <div class="w-72 p-6 bg-gray-800 shadow-lg rounded-lg transform hover:scale-105 transition">
+                <h4 class="text-xl font-semibold text-blue-300">📈 Productivity Analytics</h4>
+                <p class="mt-2 text-gray-400">Visualize and improve your focus patterns.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- More Info -->
+    <section class="py-16 text-center bg-gray-800">
+        <h3 class="text-3xl font-bold text-blue-400">Why Choose ZenChrono?</h3>
+        <p class="mt-4 text-gray-300">Designed for professionals, students, and anyone who wants to master focus.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-gray-900 text-gray-400">
+        <p>&copy; 2025 ZenChrono. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Back to Top Script -->
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+        window.onscroll = () => {
+            if (window.scrollY > 200) {
+                scrollTopBtn.classList.remove("hidden");
+            } else {
+                scrollTopBtn.classList.add("hidden");
+            }
+        };
+
+        scrollTopBtn.onclick = () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    </script>
+
+</body>
+</html>
